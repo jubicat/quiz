@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Exam: Single Page App</title>
+</head>
+<body>
+    <div class="container">
+      <p>&nbsp;</p>
+        <h2 class="display-4">Exam: Single Page Search App</h2>
+        <p class="lead">Select search `item` and write your `search keyword`</p>
+        <hr>
+ 
+        <form action="/" method="POST">
+          <div class="row g-2">
+            <div class="col-md">
+              <label for="search" class="form-label">Enter your keyword:</label>
+                <input type="search" id="search" name="search" class="form-control" placeholder="search...">
+            </div>
+            <div class="col-md">
+              <label for="item" class="form-label">Select search item:</label>
+                <select class="form-select" id="item" name="item">
+                  <option value="name">Name</option>
+                  <option value="join_year">Join Year</option>
+                  <option value="population">Population</option>
+                </select>
+              </div>
+          </div>
+          <p></p>
+          <button type="submit" class="btn btn-dark" name="searchbut">SEARCH</button>
+          <p>&nbsp;</p>
+        </form>
+
+              <table id="table" class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col"># NUM</th>
+                      <th scope="col">STATES NAMES</th>
+                      <th scope="col">JOIN YEAR</th>
+                      <th scope="col">POPULATION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                          <tr id="alldata">
+                              <th scope="row" id="rowdel"> </th>
+                              <td class="row"> </td>
+                              <td class="row"> </td>
+                              <td class="row"> </td>
+                          </tr>
+                  </tbody>
+              </table>
+    </div>
+
+</body>
+</html>
